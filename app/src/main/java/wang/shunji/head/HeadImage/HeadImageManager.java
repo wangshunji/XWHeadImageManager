@@ -1,7 +1,6 @@
 package wang.shunji.head.HeadImage;
 
 import android.app.Activity;
-import android.app.DialogFragment;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,7 +14,6 @@ import android.support.annotation.Nullable;
 
 import wang.shunji.head.HeadImage.Callback.HeadImageCallback;
 import wang.shunji.head.HeadImage.Exception.DialogItemCountException;
-import wang.shunji.head.R;
 
 /**
  * @function 用来处理app个人头像 的类
@@ -450,23 +448,20 @@ public class HeadImageManager {
         }
         mCallback = headImageCallback;
 
-//        new DialogGetHeadImage((Activity) mContext, mDialogTitle, mItems, mItempics, mHiddenItem, mIsShow) {
-//
-//            @Override
-//            public void Album() {
-//                startActivity(ConstantValue.DATA_USER_SELECT_ALBUM);
-//            }
-//
-//            @Override
-//            public void Camera() {
-//                startActivity(ConstantValue.DATA_USER_SELECT_CAMERA);
-//            }
-//        }.show();
+        new DialogGetHeadImage((Activity) mContext, mDialogTitle, mItems, mItempics, mHiddenItem, mIsShow) {
+
+            @Override
+            public void Album() {
+                startActivity(ConstantValue.DATA_USER_SELECT_ALBUM);
+            }
+
+            @Override
+            public void Camera() {
+                startActivity(ConstantValue.DATA_USER_SELECT_CAMERA);
+            }
+        }.show();
 
 
-        DialogFromBottom dialogFromBottom= new DialogFromBottom(mContext);
-        dialogFromBottom.setContentView(R.layout.dialog_head_imgae);
-        dialogFromBottom.show();
 
     }
 
