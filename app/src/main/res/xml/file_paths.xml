@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <paths>
+
+                     
+        <external-path
+            name="files_root"
+            path="Android/data/wang.shunji.headimagemanager"/>
+
+                     
+        <external-path
+            name="external_storage_root"
+            path="."/>
+
+    </paths>
+
+
+</PreferenceScreen>
