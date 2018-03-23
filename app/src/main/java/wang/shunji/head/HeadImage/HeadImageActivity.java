@@ -446,18 +446,18 @@ public class HeadImageActivity extends AppCompatActivity {
      * @param file
      */
     private void delNullFile(@Nullable File file) {
-
+        if (file!=null)//使用模拟器时file有可能是null
         if (file.isFile() && file.exists()) {
             if (file.length() == 0) {
                 boolean b = file.delete();
                 file.deleteOnExit();
                 System.gc();
-                if (b) {
-                    Toast.makeText(HeadImageActivity.this, "删除成功", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(HeadImageActivity.this, "删除失败", Toast.LENGTH_SHORT).show();
-
-                }
+//                if (b) {
+//                    Toast.makeText(HeadImageActivity.this, "删除成功", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    Toast.makeText(HeadImageActivity.this, "删除失败", Toast.LENGTH_SHORT).show();
+//
+//                }
             }
         }
     }
@@ -469,7 +469,7 @@ public class HeadImageActivity extends AppCompatActivity {
         switch (resultCode) {
             //取消拍照
             case Activity.RESULT_CANCELED:
-                Toast.makeText(this, "取消", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "取消", Toast.LENGTH_SHORT).show();
                 delNullFile(mOutFile);
                 finish();
                 break;

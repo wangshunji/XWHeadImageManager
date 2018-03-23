@@ -2,27 +2,17 @@ package wang.shunji.head.HeadImage.Crop.task;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.graphics.RectF;
-import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
-import java.io.File;
-import java.io.IOException;
 import java.io.OutputStream;
 
 import wang.shunji.head.HeadImage.Crop.callback.BitmapCropCallback;
-import wang.shunji.head.HeadImage.Crop.model.CropParameters;
-import wang.shunji.head.HeadImage.Crop.model.ExifInfo;
-import wang.shunji.head.HeadImage.Crop.model.ImageState;
 import wang.shunji.head.HeadImage.Crop.util.BitmapLoadUtils;
-import wang.shunji.head.HeadImage.Crop.util.FileUtils;
-import wang.shunji.head.HeadImage.Crop.util.ImageHeaderParser;
 
 /**
  * Crops part of image that fills the crop bounds.

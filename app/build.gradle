@@ -31,6 +31,7 @@ android {
     }
 //    resourcePrefix 'ucrop_'
 
+
     sourceSets.main {
         jni.srcDirs = [];
     }
@@ -43,6 +44,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'com.github.wangshunji:PermissionChecker:v1.0'
+    compile 'com.github.wangshunji:PermissionChecker:v1.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
 }
