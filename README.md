@@ -1,6 +1,6 @@
 
 # XWHeadImageManager
-本框架是在uCrop的基础的封装的，感谢uCrop的作者Yalantis，这是uCrop的地址：https://github.com/Yalantis/uCrop。
+本框架是在uCrop的基础上封装的，感谢uCrop的作者Yalantis，这是uCrop的地址：https://github.com/Yalantis/uCrop。
 
 ##### XWHeadImageManager的引用：
 ###### 在根目录的build.gradle里添加
@@ -12,13 +12,13 @@ allprojects {
 		}
 	}
 ```
-######在moudle的build.gradle里添加
+###### 在moudle的build.gradle里添加
 ```java
 dependencies {
 	        compile 'com.github.wangshunji:XWHeadImageManager:v1.0.0'
 	}
 ```
-######XWHeadImageManager的调用：
+###### XWHeadImageManager的调用：
 ```java
  findViewById(R.id.tv).setOnClickListener(new View.OnClickListener() {
             @Override
