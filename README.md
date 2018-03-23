@@ -15,7 +15,7 @@ allprojects {
 ###### 在moudle的build.gradle里添加
 ```java
 dependencies {
-	        compile 'com.github.wangshunji:XWHeadImageManager:v1.0.0'
+	        compile 'com.github.wangshunji:XWHeadImageManager:v1.0.1'
 	}
 ```
 ###### XWHeadImageManager的调用：
