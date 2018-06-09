@@ -1,7 +1,9 @@
 
 # XWHeadImageManager
 本框架是在uCrop的基础上封装的，感谢uCrop的作者Yalantis，这是uCrop的地址：https://github.com/Yalantis/uCrop。
-
+![](img/pic1.jpg)
+![](./img/pic2.jpg)
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 ##### XWHeadImageManager的引用：
 ###### 在根目录的build.gradle里添加
 ```java
@@ -15,7 +17,7 @@ allprojects {
 ###### 在moudle的build.gradle里添加
 ```java
 dependencies {
-	        compile 'com.github.wangshunji:XWHeadImageManager:v1.0.1'
+	        compile 'com.github.wangshunji:XWHeadImageManager:v1.0.2'
 	}
 ```
 ###### XWHeadImageManager的调用：
