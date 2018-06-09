@@ -1,8 +1,8 @@
 
 # XWHeadImageManager
 本框架是在uCrop的基础上封装的，感谢uCrop的作者Yalantis，这是uCrop的地址：https://github.com/Yalantis/uCrop。
-![](https://github.com/wangshunji/XWHeadImageManager/blob/master/XwHeadImage/img/pic1.jpg)
-![](https://github.com/wangshunji/XWHeadImageManager/blob/master/XwHeadImage/img/pic2.jpg)
+![](https://github.com/wangshunji/XWHeadImageManager/blob/master/XwHeadImage/img/pic1.png)
+![](https://github.com/wangshunji/XWHeadImageManager/blob/master/XwHeadImage/img/pic2.png)
 ##### XWHeadImageManager的引用：
 ###### 在根目录的build.gradle里添加
 ```java
