@@ -19,6 +19,8 @@ dependencies {
 	        compile 'com.github.wangshunji:XWHeadImageManager:v1.0.2'
 	}
 ```
+
+上面这种引用有点问题了，亲们直接下载zip包导入吧
 ###### XWHeadImageManager的调用：
 ```java
  findViewById(R.id.tv).setOnClickListener(new View.OnClickListener() {
