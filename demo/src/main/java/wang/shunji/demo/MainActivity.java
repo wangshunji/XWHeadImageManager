@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                             .setToolbarColor(getResources().getColor(R.color.color_209764))
                             .setHideBottomControls(false)
                             .isShowItemPic(false)
+                            .setOvalDimmedLayer(true)
                             .show(new HeadImageCallback() {
                                 @Override
                                 public void headImagePath(String path) {
